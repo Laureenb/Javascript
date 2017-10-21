@@ -1,10 +1,8 @@
-var singulier="bouteille";
+var mot="bouteille";
 var nombre=5;
-var result= "J'ai";
+var result=mot;
 
 if (nombre>1){
-	console.log (result+" "+nombre+" "+singulier+"s");
+	result=result+"s";
 }
-else {
-	console.log (result+" "+nombre+" "+singulier);
-}
+console.log ("J'ai "+ nombre +" " + result);

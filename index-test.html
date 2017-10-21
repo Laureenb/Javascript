@@ -5,6 +5,74 @@
 </head>
 <body>
 	<script>
+
+
+
+//--------- exercice 2 -------------
+
+var langue="en";
+
+var message_en="Hello world";
+var message_fr="Bonjour tout le monde";
+var message_es="Hola Mundo";
+
+if (langue == "en") {
+	console.log (message_en);
+}
+else if (langue == "fr"){
+	console.log (message_fr);
+}
+else {
+	console.log (message_es);
+}
+
+function getMessage(param)
+{
+	if (param == "en") {
+		console.log (message_en);
+	}
+	else if (param == "fr"){
+		console.log (message_fr);
+	}
+	else {
+		console.log (message_es);
+	}
+}
+
+getMessage(langue);
+langue="fr"; getMessage(langue);
+langue="es"; getMessage(langue);
+
+//---------fin exercice 2 -------------
+
+
+//--------- exercice 3 ----------------
+
+var mot="bouteille";
+var nombre=5;
+// var result=mot;
+
+// if (nombre>1){
+// 	result=result+"s";
+// }
+// console.log ("J'ai "+ nombre +" " + result);
+
+function pluriel (mon_mot,plus_s) {
+	//var result=mon_mot;
+
+	if (plus_s>1){
+		mon_mot=mon_mot+"s";
+	}
+	return "J'ai "+ plus_s +" " + mon_mot;
+}
+
+console.log(pluriel(mot,1));
+console.log(pluriel(mot,2));
+console.log(pluriel("caca",3));
+console.log(pluriel("toto",4));
+
+//--------- fin exercice 3 ----------------
+
 		var convocation="cou cou";
 
 		//ici on va changer la valeur de convocation = cou cou en coucou (ça ne marche pas...)//

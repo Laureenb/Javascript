@@ -1,14 +1,13 @@
-var score=55;
-var resultat= prompt("Quel est ton score?");
+var score=prompt("Quel est ton score?");
+var rang;
 
 if (score>=90) {
-	console.log ("Vous avez le rang A si vous avez un score égal ou supérieur a 90");
+	rang="A";
 }
-
 else if (score<90 && score>50) {
-	console.log ("Vous avez le rang B si vous avez un score inférieur a 90");
+	rang="B";
 }
-
 else if (score<=50) {
-	console.log ("Vous avez le rang C si vous avez un score inférieur ou égal a 50");
+	rang="C";
 }
+alert("Vous avez le rang " + rang);
