@@ -1,6 +1,6 @@
 var enfantNumber =12;
-var Nom="Jocelyne";
-var Pays="Nouvelle-Zelande";
-var Metier="tisserand";
-	var result= ("Vous serez "+Metier+ ", vous habiterez en "+Pays+",serez marié à "+Nom+" avec "+enfantNumber+" enfants.");
-		console.log (result);
+var nom="Jocelyne";
+var pays="Nouvelle-Zelande";
+var metier="tisserand";
+var result="Vous serez "+metier+ ", vous habiterez en "+pays+",serez marié à "+nom+" avec "+enfantNumber+" enfants.";
+console.log (result);
