@@ -1,49 +1,42 @@
-
 //Soustraction
 var a = 10;
 var b = 5;
-function soustraction (a,b){
-	return a-b;
+function soustraction (x,y){
+	return x-y;
 }
-var result =soustraction(a,b);
-console.log(result);
-
+console.log("résultat soustraction: " + soustraction(a,b));
 
 //Division
-var a= 20;
-var b= 2;
-function division (a,b){
-	return a/b;
+// a= 20;
+// b= 2;
+function division (x,y){
+	return x/y;
 }
-var result =division(a,b);
-console.log(result);
-
+console.log("résultat division: " + division(a,b));
 
 //Multiplication
-var a= 3;
-var b= 4;
-function multiplication (a,b){
-	return a*b;
+a= 3;
+b= 4;
+function multiplication (x,y){
+	return x*y;
 }
-var result =multiplication(a,b);
-console.log(result);
-
+console.log("résultat multiplication: " + multiplication(a,b));
 
 //Pourcentage
 var valeur= 10;
 var pourcent= 50;
 function pourcentage (valeur,pourcent){
-	return pourcent/valeur;
+	return valeur*pourcent/100;
 } 
 var result =pourcentage(valeur,pourcent);
-console.log(result);
+console.log("résultat pourcentage: " + result + "%");
 
 
 //Vitesse
 var distance= 100;
 var temps= 2;
 function vitesse (distance,temps){
-	return distance*temps;
+	return distance/temps;
 }
-var result =vitesse(distance,temps);
-console.log(result+"km/h");
+result = vitesse(distance,temps);
+console.log("résultat vitesse: " + result + " km/h");
