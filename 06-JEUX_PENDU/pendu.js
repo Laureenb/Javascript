@@ -1,11 +1,7 @@
-
-//     window.prompt();
-//     window.alert();
-//     window.confirm();
-
-var mot =["P","E","N","D","U"];
-var espaces_rempli =[" "," "," "," "," "];
-var compteur = 0;
+var mot = ["P","E","N","D","U"];
+var mot_en_cours = ["_","_","_","_","_"];
+var erreurs = 0;
+var max_erreurs = 5;
 
 var fenetre=confirm("Voulez-vous jouer au pendu?");
 	if (fenetre == false) {
@@ -15,45 +11,46 @@ var fenetre=confirm("Voulez-vous jouer au pendu?");
 	}
 	}
 	else {
-    	
-	function mot_a_deviner() {
 
-			var enter= prompt("Entrez une lettre en majuscule entre A et Z");
-			var enter= enter.toUpperCase();
-		
 
-		if (enter.length !=1 ) {
-			alert("Entrez seulement un caractère")
-		}	
-		else {
-			if(mot.indexOf(enter) == -1) {
-				alert("Introuvable!");
-			}
-			else {
-				alert("Trouvé!");
-			for (var i = 0; i < mot.length; i++) {
-			if(enter==mot[i]) {
-			compteur++;
-			alert("C'est la lettre de l'index" +i);
-			espaces_rempli.slice(i, 1, mot);
-			alert(espaces_rempli);
-			}
-			}
-		}
-	}
-		if (compteur == mot.length) {
-			alert("Vous avez gagné!");
-		}
-		else {
-			mot_a_deviner();
-		}
-		mot_a_deviner();
-	}
-	mot_a_deviner();
+function jouerEncore(){
+	return erreurs < max_erreurs;
+};
+
+function lettreDansMot(lettre){
+	return mot.indexOf(lettre) >= 0; 
 }
 
+function remplacerLettre(lettre){
+	for (var i = 0; i < mot.length; i++) {
+		if(mot[i] == lettre){
+			mot_en_cours[i] = lettre;
+		}
+	}
+}
 
+function devinerMot(){
+	if (jouerEncore() == true) { //pas obliger d'écrire == true
+		var lettre = prompt("mot actuel "+ mot_en_cours + "\nErreurs: " + erreurs + "\nEntrez votre lettre").toUpperCase();
+		if (lettreDansMot(lettre) == true){
+			remplacerLettre(lettre);
+			if (mot_en_cours.indexOf("_") > -1) {
+				devinerMot();
+			}
+			else{
+				alert("Vous avez gagné!!!!!");
+			}
+		}
+		else {
+			erreurs= erreurs+1;
+			devinerMot();
+		}
+	}
+	else {
+		alert("Game Over");
+	}
+};
 
-// if (window.confirm("Une nouvelle fenêtre va s'ouvrir.")) { 
-//     window.open("fenetre.html", "Nouvelle fenêtre", "");
-// }
+devinerMot();
+
+}
