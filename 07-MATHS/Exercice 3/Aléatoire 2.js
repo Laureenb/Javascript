@@ -17,3 +17,4 @@ function getRandom_exo3(min, max) {
 	return Math.ceil(Math.random() * (10 - 0) + 0);
 }
 console.log(Math.ceil(Math.random() * (10 - 0) + 0));
+var randomtruc=getRandom_exo3(10,30);
