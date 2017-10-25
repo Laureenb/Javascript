@@ -1,62 +1,72 @@
-// Utiliser la console ou les fonctions natives suivantes :
-
-//     window.prompt();
-//     window.alert();
-//     window.confirm();
-
-
-
-//  Variable qui sera utilisée pour afficher un message
-//  Variable qui va compter le nombre d'essais
-//  Variable de la valeur minimum qu'on peut entrer (ici 20)
-//  Variable de la valeur maximale qu'on peut entrer (ici 80)
 var message_plus = "C'est plus" ;
 var message_moins = "C'est moins" ;
-var message = "C'est gagné tu as trouvé en " + nombre_essai + " coups!" ;
-var nombre_essai;
-var saisie;
 var min = 20;
 var max = 80;
-var juste = retour_num();
+
 
 var fenetre=confirm("Bonjour voulez-vous jouer au Juste Prix?");
-	if (fenetre == false) {
-		alert("Aurevoir...");
-		if (false) {
-		fenetre.close();
+if (fenetre == false) {
+	alert("Aurevoir...");
+	if (false) {
+	fenetre.close();
 	}
-	}
-	else {
-
-
-//  crée une fonction qui retourne un numéro aléatoire arondi entre la variable minimale 
-//  et la variable maximale
-// function retour_num (){
-// 	var arrondi = Math.floor(Math.random()* (max - min) + min);
-//     return arrondi;
-// }
-// retour_num();
-
-// //   crée une fonction qui prends un argument pour tester si le numéro qu'on a entré est le bon
-// //   la fonction retourne un de ces 3 messages : C'est plus, C'est moins,C'est juste 
-// //   tu as trouvé en X coups
-// function test(numéro){
-// 	if (numéro == juste){
-// 		console.log(message);
-// 	}
-// 	else if (numéro > 33){
-// 		console.log(message_moins);
-// 	}
-// 	else {
-// 		console.log(message_plus);
-// 	}
-// }
-
-
-
-
-
-
-
-
 }
+else {
+
+	var demande_chiffre = prompt("Donner moi un chiffre");
+
+	function retour_num (){
+		return Math.floor(Math.random()* (max - min) + min);
+	}
+	var arrondi = retour_num();
+	console.log(arrondi);
+
+	function jeu () {
+		var demande_chiffre = prompt("Donner moi un chiffre");
+		var nombre_essai = 0;
+		if (demande_chiffre >20 && demande_chiffre <80) {
+			while (demande_chiffre != arrondi) {	
+				if (demande_chiffre < arrondi) {
+				alert(message_plus);
+				nombre_essai +=1;	
+				}
+				else if (demande_chiffre > arrondi) {				
+				alert(message_moins);
+				nombre_essai +=1;
+				}
+				demande_chiffre = prompt("Donner moi un chiffre");
+			}
+				if (demande_chiffre == arrondi) {
+				alert("C'est gagné tu as trouvé en " + nombre_essai*2 + " coups!");
+				}
+				else {
+				demande_chiffre = prompt("Donner moi un chiffre");	
+				}
+			
+		}
+		else {
+			alert("Entrez un numéro entre 20 et 80");
+		}
+	}
+jeu();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// }
