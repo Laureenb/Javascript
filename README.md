@@ -1,3 +1,3 @@
 # Javascript
 
-![javascript/memento_javascript_perso.md]
+[Doc M-A](https://github.com/bouchat-marieange/javascript)
