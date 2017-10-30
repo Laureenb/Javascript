@@ -1,39 +1,12 @@
-.hoverMe {
-  transition: opacity 1s cubic-bezier(0.12, 1.86, 0, -0.81);
-  opacity: 1;
+.highlight{
+  opacity: 0.2;
 }
 
-.disparition {
-  opacity: 0;
-} 
-
-/*.zero {
-  position:absolute;
-  background-color: black;
-}
-*/
-
-
-/*
-body{
+#down, #left, #right, #up{
   width: 100%;
-  margin:0;
-  padding: 0;
+  height: 100%;
+  border: 1px solid black;
+  margin: auto;
+  display: inline-block;
+  background-color: grey;
 }
-div{
-  width: 200px;
-  height: 100px;
-  border:1px solid black;
-}
-.hoverMe{
-  transition: opacity 1s cubic-bezier(0.12, 1.86, 0, -0.81);
-  opacity: 1;
-}
-.hidden-by-hover{
-  opacity: 0;
-
-}
-.zero{
-  position:absolute;
-  background-color: black;
-}*/
