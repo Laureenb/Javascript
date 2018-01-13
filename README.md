@@ -1,4 +1,4 @@
-#Javascript ![Becode exo](https://github.com/becodeorg/Lovelace-promo-2/tree/master/Parcours/JavaScript)
+# Javascript ![Becode exo](https://github.com/becodeorg/Lovelace-promo-2/tree/master/Parcours/JavaScript)
 
 # Exercices : Variables  	01-VARIABLES
 ### Exercice  : Diseur de bonne aventure
