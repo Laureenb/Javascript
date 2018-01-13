@@ -1,4 +1,4 @@
-![Becode exo](https://github.com/becodeorg/Lovelace-promo-2/tree/master/Parcours/JavaScript)
+#Javascript ![Becode exo](https://github.com/becodeorg/Lovelace-promo-2/tree/master/Parcours/JavaScript)
 
 # Exercices : Variables  	01-VARIABLES
 ### Exercice  : Diseur de bonne aventure
@@ -139,12 +139,12 @@ Déclarez les variables suivantes :
 - La valeur est égal au chiffre le plus grand dans l'enssemble suivant : -3, 9, 21, 36, 27, 54, 17, 35
 - La valeur est égal a l'addition des deux précédentes variables
 
-## Exercice : Aléatoire 1
+### Exercice : Aléatoire 1
 - Faire une variable `floatBateau` dont la valeur est 10.4
 - Faire une variable `couleBateau` dont la valeur est `floatBateau` arrondie vers le **bas**
 - Faire une variable `voleBateau` dont la valeur est `floatBateau` arrondie vers le **haut**
 
-## Exercice : Aléatoire 2 
+### Exercice : Aléatoire 2 
 Déclarez les variables suivantes : 
 - La valeur aléatoire entre **50** et **100**
 - La valeur aléatoire peut être seulement **0** ou **1**
@@ -163,7 +163,7 @@ Déclarez les variables suivantes :
 - afficher chaque information sur une ligne séparés dans la console __(for in)__
 - faire une fonction "giveItem" qui permet au PNJ de donner un objet aléatoirement
 
-# Exercice : Shop
+### Exercice : Shop
 Crée un tableau avec des *objets* à vendre (épée, hache, sceptre, etc.)
 Caractéristique de chaque objet :
 - title (string) 
@@ -176,7 +176,7 @@ Manipulation :
 - faire une fonction pour afficher les objets disponibles
 - faire une fonction pour afficher les objets dont le niveau minimum est de 10
 
-# Exercice : Personnage
+### Exercice : Personnage
 * crée un objet "mainCharacter" qui possède le propriétés suivantes : 
 - name (string) 
 - level (int) 
@@ -191,7 +191,7 @@ Manipulation :
 		(le nom du personnage) attaque avec l'arme (nom de l'arme) les dégâts sont (niveau du personnage multiplié par le damage de l'arme)
 
 
-## Exercice : Juste prix 09-JEUX_JUSTEPRIX
+# Exercice : Juste prix 09-JEUX_JUSTEPRIX
 Déclarez les variables suivantes : 
 * Variable qui sera utilisée pour afficher un message
 * Variable qui va compter le nombre d'essais
@@ -208,10 +208,10 @@ Utiliser la console **ou** les fonctions natives suivantes :
 - window.confirm();
 
 
-## DOM 10-DOM
+# DOM 10-DOM
 - ![Télécharger fichier] (https://github.com/becodeorg/Lovelace-promo-2/blob/master/Parcours/JavaScript/10-DOM/files.zip)
 
-# #EXERCICE 1 : Manipulation de classes
+### EXERCICE 1 : Manipulation de classes
 - sélectionner le body 
 - lui retirer la classe "bg-aqua"
 - lui ajouter la classe "bg-olive"
@@ -224,13 +224,13 @@ Utiliser la console **ou** les fonctions natives suivantes :
 - sélectionne tous les éléments de type 'blockquote'
 - modifier tout ces éléments en leurs ajoutant la classe "bg-white"
 
-## EXERCICE 2  : Selecteurs CSS
+### EXERCICE 2  : Selecteurs CSS
 - avec `querySelector` sélectioner l'élément 'my-table'
 - lui ajouter la classe "bg-purple"
 - avec `querySelectorAll` sélectioner tous les paragraphes dans 'container'
 - modifier tout ces éléments en leurs ajoutant la classe 'shadow'
 
-## EXERCICE 3
+### EXERCICE 3
 - sélectionne tous les éléments de type 'pre'
 - avec la propriété `style` change la couleur de texte
 - avec la propriété `style` change la couleur de fond grâce à `backgroundColor`
@@ -241,7 +241,7 @@ Utiliser la console **ou** les fonctions natives suivantes :
 - sélectionne le premier élément de type 'h2'
 - ramplacer son contenu texte par en `<strong>HTML doens't work !</strong>`
 
-## EXERCICE 4 : Création d'éléments
+### EXERCICE 4 : Création d'éléments
 - sélectioner le premier 'ul'
 - crée un élément de type 'li'
 - ajouter ce texte `Mon meilleur ami est <a href='http://www.google.com'>Google</a>` dans le 'li'
@@ -249,7 +249,7 @@ Utiliser la console **ou** les fonctions natives suivantes :
 - sélectionner le premier lien dans le 'li' précedement crée
 - avec la propriété `style` change la couleur de texte de ce lien
 
-## EXERCICE 5 : Création et suppression de plusieurs éléments
+### EXERCICE 5 : Création et suppression de plusieurs éléments
 
 - sélectionner le premier élément 'ol'
 - faire une boucle sur tous les enfants de ce dernier grâce à sa propriété `children`
@@ -286,7 +286,7 @@ Autres
 
 
 # /!\ Utilisez Firefox pour cet exercice ! 11-AJAX
-# avec les fonctions des tableaux
+## Avec les fonctions des tableaux
 1. charger le fichier "data.json" `tip : xmlHttpRequest`
 2. ajouter un score aléatoire (0 -> 1000) à toutes ces personnes `tip: arr.map()`
 3. classer l'odre du tableau selon les scores `tip : arr.sort()`
